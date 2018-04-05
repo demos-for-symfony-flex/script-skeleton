@@ -19,7 +19,8 @@ composer require annotations # sensio/framework-extra-bundle
 # install --directory config # Is it really needed?
 # composer require symfony/yaml # in symfony/skeleton
 # composer require symfony/console # in symfony/skeleton
-composer require symfony/twig-bundle # in symfony/website-skeleton
+echo "symfony/twig-bundle"
+composer require twig # in symfony/website-skeleton
 ## composer require sensio/framework-extra-bundle # in symfony/website-skeleton
 # composer require symfony/orm-pack # in symfony/website-skeleton
 # composer require symfony/swiftmailer-bundle # in symfony/website-skeleton
@@ -27,6 +28,8 @@ composer require symfony/twig-bundle # in symfony/website-skeleton
 # cp $origin/config/packages/*.yaml config/packages --verbose
 # cp $origin/config/routes/*.yaml config/routes --verbose
 # composer require friendsofsymfony/user-bundle
+echo "symfony/phpunit-bridge"
+composer require simple-phpunit
 
 # cp $origin/src/Entity/*.php src/Entity --verbose # May be done earlier.
 # bin/console doctrine:database:create
