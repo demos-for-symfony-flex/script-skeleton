@@ -3,23 +3,23 @@
 set -ev # https://docs.travis-ci.com/user/customizing-the-build/
 
 origin=$(pwd)
-composer create-project --no-install symfony/skeleton $CREATE_PROJECT_DIRECTORY
+/usr/bin/time composer create-project --no-install symfony/skeleton $CREATE_PROJECT_DIRECTORY
 if [[ -v $CREATE_PROJECT_DIRECTORY ]]; then
   cd $CREATE_PROJECT_DIRECTORY
 else
   cd website-skeleton
 fi
-composer config bin-dir bin
+/usr/bin/time composer config bin-dir bin
 # cp $origin/.env.dist . # Needs apparently to be done before install.
-composer install
-composer require annotations # sensio/framework-extra-bundle
+/usr/bin/time composer install
+/usr/bin/time composer require annotations # sensio/framework-extra-bundle
 # composer remove --dev symfony/profiler-pack
 #^ Dependency "symfony/twig-bundle" is also a root requirement, but is not explicitly whitelisted. Ignoring.
 # install --directory config # Is it really needed?
 # composer require symfony/yaml # in symfony/skeleton
 # composer require symfony/console # in symfony/skeleton
-composer require twig # symfony/twig-bundle
-composer require server # symfony/web-server-bundle
+/usr/bin/time composer require twig # symfony/twig-bundle
+/usr/bin/time composer require server # symfony/web-server-bundle
 ## composer require sensio/framework-extra-bundle # in symfony/website-skeleton
 # composer require symfony/orm-pack # in symfony/website-skeleton
 # composer require symfony/swiftmailer-bundle # in symfony/website-skeleton
@@ -27,8 +27,8 @@ composer require server # symfony/web-server-bundle
 # cp $origin/config/packages/*.yaml config/packages --verbose
 # cp $origin/config/routes/*.yaml config/routes --verbose
 # composer require friendsofsymfony/user-bundle
-composer require browser-kit # symfony/browser-kit
-composer require simple-phpunit # symfony/phpunit-bridge
+/usr/bin/time composer require browser-kit # symfony/browser-kit
+/usr/bin/time composer require simple-phpunit # symfony/phpunit-bridge
 
 # cp $origin/src/Entity/*.php src/Entity --verbose # May be done earlier.
 # bin/console doctrine:database:create
