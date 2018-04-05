@@ -29,5 +29,7 @@ class SmokeTest extends WebTestCase
     public function urlProvider()
     {
         yield ['/'];
+        yield ['/hello'];
+        yield ['/lucky/number/10'];
     }
 }
