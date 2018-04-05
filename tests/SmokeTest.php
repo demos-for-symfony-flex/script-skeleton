@@ -12,7 +12,7 @@ class SmokeTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         $this->assertSame(200, $client->getResponse()->getStatusCode());
-        $this->assertSame(1, $crawler->filter('h1:contains("Hello World")')->count());
+        $this->assertSame(1, $crawler->filter('h1:contains("Hello")')->count());
     }
     // RuntimeException: To filter with a CSS selector, install the CssSelector component ("composer require symfony/css-selector"). Or use filterXpath instead.
 
