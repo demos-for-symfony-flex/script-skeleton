@@ -1,4 +1,5 @@
-// src/Controller/LuckyController.php
+<?php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
