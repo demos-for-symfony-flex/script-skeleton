@@ -35,6 +35,7 @@ composer config bin-dir bin
 # cp $origin/config/packages/*.yaml config/packages --verbose
 # cp $origin/config/routes/*.yaml config/routes --verbose
 # composer require friendsofsymfony/user-bundle
+/usr/bin/time composer require css-selector # symfony/css-selector
 /usr/bin/time composer require browser-kit # symfony/browser-kit
 /usr/bin/time composer require simple-phpunit # symfony/phpunit-bridge
 
