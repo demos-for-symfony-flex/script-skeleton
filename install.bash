@@ -16,6 +16,7 @@ if [[ -v $CREATE_PROJECT_DIRECTORY ]]; then
 else
   cd skeleton
 fi
+(cd $origin && tar --exclude-vcs --create --file - .) | tar --extract --verbose --file -
 /usr/bin/time composer config bin-dir bin
 # cp $origin/.env.dist . # Needs apparently to be done before install.
 /usr/bin/time composer install
@@ -48,6 +49,6 @@ fi
 # bin/console fos:user:create superadmin superadmin@example.com superadmin --super-admin
 # bin/console fos:user:create user user@example.com user
 
-cp --recursive $origin/tests . --verbose
+# cp --recursive $origin/tests . --verbose
 
 bin/console assets:install --symlink
