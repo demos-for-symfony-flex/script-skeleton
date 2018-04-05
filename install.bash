@@ -21,6 +21,8 @@ composer require annotations # sensio/framework-extra-bundle
 # composer require symfony/console # in symfony/skeleton
 echo "symfony/twig-bundle"
 composer require twig # in symfony/website-skeleton
+echo "symfony/web-server-bundle"
+composer require server
 ## composer require sensio/framework-extra-bundle # in symfony/website-skeleton
 # composer require symfony/orm-pack # in symfony/website-skeleton
 # composer require symfony/swiftmailer-bundle # in symfony/website-skeleton
