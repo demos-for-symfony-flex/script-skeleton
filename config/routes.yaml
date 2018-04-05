@@ -4,10 +4,10 @@
 
 # Using YAML config as Annotation is failing
 
-hello:
-    path: /
-    controller: App\Controller\HelloController::index
+# hello:
+    # path: /
+    # controller: App\Controller\HelloController::index
 
-app_lucky_number:
-    path: /lucky/number/{max}
-    controller: App\Controller\LuckyController::number
+# app_lucky_number:
+    # path: /lucky/number/{max}
+    # controller: App\Controller\LuckyController::number
