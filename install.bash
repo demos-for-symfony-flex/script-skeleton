@@ -3,7 +3,7 @@
 set -ev # https://docs.travis-ci.com/user/customizing-the-build/
 
 origin=$(pwd)
-composer create-project --no-install symfony/website-skeleton $CREATE_PROJECT_DIRECTORY
+composer create-project --no-install symfony/skeleton $CREATE_PROJECT_DIRECTORY
 if [[ -v $CREATE_PROJECT_DIRECTORY ]]; then
   cd $CREATE_PROJECT_DIRECTORY
 else
