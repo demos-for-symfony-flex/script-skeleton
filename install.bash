@@ -2,6 +2,8 @@
 # [[ ]] requires bash
 set -ev # https://docs.travis-ci.com/user/customizing-the-build/
 
+printenv CREATE_PROJECT_DIRECTORY
+
 origin=$(pwd)
 /usr/bin/time composer create-project --no-install symfony/skeleton $CREATE_PROJECT_DIRECTORY
 if [[ -v $CREATE_PROJECT_DIRECTORY ]]; then
