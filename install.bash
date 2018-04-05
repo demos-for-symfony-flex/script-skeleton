@@ -7,7 +7,7 @@ origin=$(pwd)
 if [[ -v $CREATE_PROJECT_DIRECTORY ]]; then
   cd $CREATE_PROJECT_DIRECTORY
 else
-  cd website-skeleton
+  cd skeleton
 fi
 /usr/bin/time composer config bin-dir bin
 # cp $origin/.env.dist . # Needs apparently to be done before install.
