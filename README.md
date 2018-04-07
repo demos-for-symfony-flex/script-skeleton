@@ -1,4 +1,4 @@
-# testing-skeleton
+# script-skeleton
 
 * Doubled by [symfony-skeleton-demo/skeleton-only](https://github.com/symfony-skeleton-demo/skeleton-only)
 * Script building a website
