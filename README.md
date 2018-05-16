@@ -7,8 +7,8 @@
 
 # Relation to other projects
 ## Similar projects
-* [symfony-flex-demo/skeleton](https://github.com/symfony-flex-demo/skeleton)
-* [symfony-skeleton-demo/skeleton-only](https://github.com/symfony-skeleton-demo/skeleton-only)
+* [symfony-skeleton-demo/skeleton](https://github.com/symfony-skeleton-demo/skeleton)
+* [symfony-skeleton-demo/web-server](https://github.com/symfony-skeleton-demo/web-server)
 
 ## Documentation
 * [*Creating the Project* (Best Proctices)](https://symfony.com/doc/current/best_practices/creating-the-project.html)
