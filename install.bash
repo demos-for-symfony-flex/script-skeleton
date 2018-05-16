@@ -25,9 +25,9 @@ composer config bin-dir bin
 # composer require symfony/yaml # in symfony/skeleton
 # composer require symfony/console # in symfony/skeleton
 /usr/bin/time composer require twig # symfony/twig-bundle
-/usr/bin/time composer require server # symfony/web-server-bundle
+/usr/bin/time composer require server --dev # symfony/web-server-bundle
 /usr/bin/time composer require css-selector # symfony/css-selector # Needed by a test!
 /usr/bin/time composer require browser-kit # symfony/browser-kit
-/usr/bin/time composer require simple-phpunit # symfony/phpunit-bridge
+/usr/bin/time composer require simple-phpunit --dev # symfony/phpunit-bridge
 
 bin/console assets:install --symlink
