@@ -6,8 +6,11 @@
 * Script building a website
 
 # Relation to other projects
-## Similar projects
+## Similar projects: skeleton family
+* [symfony-flex-init/skeleton](https://github.com/symfony-flex-init/skeleton)
 * [symfony-skeleton-demo/skeleton](https://github.com/symfony-skeleton-demo/skeleton)
+
+## Going a little step further: web-server
 * [symfony-skeleton-demo/web-server](https://github.com/symfony-skeleton-demo/web-server)
 
 ## Documentation
