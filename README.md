@@ -1,4 +1,4 @@
-# script-skeleton
+# [symfony-flex-demo](https://symfony-flex-demo.github.io)/script-skeleton
 
 [![Build Status](https://travis-ci.org/symfony-flex-demo/script-skeleton.svg?branch=master)](https://travis-ci.org/symfony-flex-demo/script-skeleton)
 
