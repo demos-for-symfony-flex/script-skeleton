@@ -22,7 +22,7 @@ composer config bin-dir bin
 
 /usr/bin/time composer install
 
-# /usr/bin/time composer require annotations # sensio/framework-extra-bundle
+/usr/bin/time composer require annotations # sensio/framework-extra-bundle
 # temorary bug in Symfony 4.1 sensio/framework-extra-bundle 5.2
 # http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle
 # [How to fix Symfony 3.4 @Route and @Method deprecation](https://stackoverflow.com/questions/51171934/how-to-fix-symfony-3-4-route-and-method-deprecation)
