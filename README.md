@@ -1,6 +1,6 @@
 # [symfony-flex-demo](https://symfony-flex-demo.github.io)/script-skeleton
 
-[![Build Status](https://travis-ci.org/symfony-flex-demo/script-skeleton.svg?branch=master)](https://travis-ci.org/symfony-flex-demo/script-skeleton) **Inverted**
+[![Build Status](https://travis-ci.org/symfony-flex-demo/script-skeleton.svg?branch=master)](https://travis-ci.org/symfony-flex-demo/script-skeleton) **Inverted** because of bug: Deprecated @Route and @Method Annotations
 
 * Doubled by [symfony-skeleton-demo/skeleton-only](https://github.com/symfony-skeleton-demo/skeleton-only)
 * Script building a website
