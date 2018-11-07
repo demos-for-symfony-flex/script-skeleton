@@ -58,6 +58,7 @@ after_script:
 - composer config bin-dir --global --absolute
 - composer show --latest
 - ls -A ~
+- ls -A ~/.composer
 - pwd
 - find . -name composer.lock
 - composer exec --list
@@ -66,7 +67,7 @@ after_script:
 - composer global exec -- security-checker
 - composer global exec -- security-checker help
 - composer global exec -- security-checker security:check
-- composer global exec -- security-checker security:check composer.lock
+- ~/.composer/vendor/bin/security-checker security:check composer.lock
 - composer global exec -- security-checker security:check $(pwd)/composer.lock
 - composer global exec -- security-checker security:check /home/travis/build/symfony-flex-demo/script-skeleton/skeleton/composer.lock
 - composer global exec -- security-checker security:check skeleton/composer.lock
