@@ -58,6 +58,7 @@ after_script:
 - composer config bin-dir --global --absolute
 - composer show --latest
 - ls -A ~
+- find . -name composer.lock
 - composer exec --list
 - composer global exec --list
 - composer global exec security-checker
