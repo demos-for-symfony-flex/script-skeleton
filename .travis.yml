@@ -53,7 +53,7 @@ install:
 
 script:
 - composer exec --verbose -- simple-phpunit
-- ~/.composer/vendor/bin/security-checker security:check vendor/bin/.phpunit/phpunit-6.5/composer.lock
+- ~/.composer/vendor/bin/security-checker security:check vendor/bin/.phpunit/phpunit-*/composer.lock
 
 after_script:
 - composer config bin-dir --absolute
