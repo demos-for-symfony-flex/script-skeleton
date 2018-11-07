@@ -47,11 +47,9 @@ install:
   else
     cd skeleton
   fi
-# - composer global require symfony/flex
 - composer global require sensiolabs/security-checker
 - ~/.composer/vendor/bin/security-checker security:check
 - ~/.composer/vendor/bin/security-checker security:check skeleton/composer.lock
-- ~/.composer/vendor/bin/security-checker security:check vendor/bin/.phpunit/phpunit-6.5/composer.lock || true
 
 script:
 - composer exec --verbose -- simple-phpunit
