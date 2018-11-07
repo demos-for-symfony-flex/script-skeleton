@@ -49,9 +49,13 @@ install:
   fi
 # - composer global require symfony/flex
 - composer global require sensiolabs/security-checker
+- ~/.composer/vendor/bin/security-checker security:check
+- ~/.composer/vendor/bin/security-checker security:check skeleton/composer.lock
+- ~/.composer/vendor/bin/security-checker security:check vendor/bin/.phpunit/phpunit-6.5/composer.lock || true
 
 script:
 - composer exec --verbose -- simple-phpunit
+- ~/.composer/vendor/bin/security-checker security:check vendor/bin/.phpunit/phpunit-6.5/composer.lock
 
 after_script:
 - composer config bin-dir --absolute
@@ -67,7 +71,6 @@ after_script:
 - composer global exec -- security-checker
 - composer global exec -- security-checker help
 - composer global exec -- security-checker security:check
-- ~/.composer/vendor/bin/security-checker security:check composer.lock
 - composer global exec -- security-checker security:check $(pwd)/composer.lock
 - composer global exec -- security-checker security:check /home/travis/build/symfony-flex-demo/script-skeleton/skeleton/composer.lock
 - composer global exec -- security-checker security:check skeleton/composer.lock
